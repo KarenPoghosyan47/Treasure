@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./TTNorms/stylesheet.css">
+</head>
+
+<body>
+
+<section class="settings">
+        <div class="container">
+            <div class="person">
+                <img src="./img/person.jpg" alt="">
+                <p>Виктор</p>
+                <span>@viktorsha228</span>
+            </div>
+
+            <label for="fname">Введите имя </label><br>
+            <div class="input-div">
+                <input type="text" id="fname" name="fname" value="Виктор">
+                <svg width="16" height="19" viewBox="0 0 16 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.9445 5C12.9445 7.76142 10.706 10 7.94453 10C5.18311 10 2.94453 7.76142 2.94453 5C2.94453 2.23858 5.18311 0 7.94453 0C10.706 0 12.9445 2.23858 12.9445 5Z" fill="#9299A2"/>
+                    <path d="M14.9445 19C15.4968 19 15.951 18.5505 15.8821 18.0026C15.6618 16.2486 14.8646 14.6064 13.6014 13.3431C12.1011 11.8429 10.0663 11 7.94453 11C5.8228 11 3.78797 11.8429 2.28768 13.3431C1.02443 14.6064 0.227287 16.2486 0.00692317 18.0026C-0.0619233 18.5505 0.392246 19 0.94453 19L14.9445 19Z" fill="#C2C7CD"/>
+                    </svg>
+            </div>
+
+            <div class="select">
+                <label for="raa">Язык интерфейса</label>
+                <input class="select__input" type="hidden" name="raa">
+                <div class="select__head">Русский</div>
+                <ul class="select__list" style="display: none;">
+                    <li class="select__item">Армянский</li>
+                    <li class="select__item">Английский</li>
+                    <li class="select__item">Русский</li>
+                </ul>
+            </div>
+<div class="btnSettings">
+    <button id="openModalBtn" class="btn1">Удалить аккаунт
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11L6 6L1 1" stroke="#FF3B30" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </button>
+  
+    <button class="btn2">Политика конфиденциальности
+        <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1 11L6 6L1 1" stroke="#333333" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+    </button>
+</div>
+
+
+         <button class="save">Сохранить изменения</button>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="32" height="32" rx="16" fill="#F6F7F8"/>
+                        <path d="M11.2803 11.2812L20.7203 20.7212" stroke="#9299A2" stroke-width="1.51111" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.7203 11.2812L11.2803 20.7212" stroke="#9299A2" stroke-width="1.51111" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </span>
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="20" fill="#EAECEE"/>
+                    <path d="M22.0175 10H17.9825C16.5765 10 15.8735 10 15.4368 10.4368C15 10.8735 15 11.5765 15 12.9825C15 13.937 15 14.4142 15.2929 14.7071C15.5858 15 16.0572 15 17 15H23C23.9428 15 24.4142 15 24.7071 14.7071C25 14.4142 25 13.937 25 12.9825V12.9824C25 11.5765 25 10.8735 24.5632 10.4368C24.1265 10 23.4235 10 22.0175 10Z" fill="#9299A2"/>
+                    <path d="M27.1085 24.6335C26.8152 27.2884 26.6686 28.6158 25.9192 29.5322C25.6572 29.8526 25.347 30.1304 24.9997 30.3557C24.0066 31 22.6711 31 20.0001 31C17.329 31 15.9935 31 15.0004 30.3557C14.6531 30.1304 14.343 29.8526 14.0809 29.5322C13.3315 28.6158 13.1849 27.2883 12.8917 24.6335L11.7648 14.4304L28.2354 14.4304L27.1085 24.6335Z" fill="#C2C7CD"/>
+                    <path d="M11 14H29" stroke="#9299A2" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    
+                <p class="p1">Вы действительно хотите удалить свой аккаунт?</p>
+                <p class="p2">Все ваши данные,включая погресс в игре,достижения и покупки будут безвозвратно удалены. Это действие нельзя отменить</p>
+                <button>Подтвердить удаление</button>
+            </div>
+        </div>
+</section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    jQuery(($) => {
+    $('.select').on('click', '.select__head', function () {
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $(this).next().fadeOut();
+        } else {
+            $('.select__head').removeClass('open');
+            $('.select__list').fadeOut();
+            $(this).addClass('open');
+            $(this).next().fadeIn();
+        }
+    });
+
+    $('.select').on('click', '.select__item', function () {
+        $('.select__head').removeClass('open');
+        $(this).parent().fadeOut();
+        $(this).parent().prev().text($(this).text());
+        $(this).parent().prev().prev().val($(this).text());
+    });
+
+    $(document).click(function (e) {
+        if (!$(e.target).closest('.select').length) {
+            $('.select__head').removeClass('open');
+            $('.select__list').fadeOut();
+        }
+    });
+});
+</script>
+
+
+<script>
+ // Получаем модальное окно
+var modal = document.getElementById("myModal");
+
+// Получаем кнопку, которая открывает модальное окно
+var btn = document.getElementById("openModalBtn");
+
+// Получаем элемент <span>, который закрывает модальное окно
+var span = document.getElementsByClassName("close")[0];
+
+// Когда пользователь нажимает на кнопку, открываем модальное окно
+btn.onclick = function() {
+    modal.style.display = "flex";
+    document.body.classList.add('no-scroll'); // Отключаем прокрутку
+}
+
+// Когда пользователь нажимает на <span> (x), закрываем модальное окно
+span.onclick = function() {
+    modal.style.display = "none";
+    document.body.classList.remove('no-scroll'); // Включаем прокрутку обратно
+}
+
+// Когда пользователь нажимает где-то вне модального окна, закрываем его
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.classList.remove('no-scroll'); // Включаем прокрутку обратно
+    }
+}
+
+
+</script>
+</body>
+
+</html>
